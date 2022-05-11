@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="#" class="logo">My Logo</a>
+        <div class="toggler">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu-items">
+                <ul>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonials</a>
+                    </li>
+                </ul>
+                <button class="modeBtn" onclick="changeMode()">Dark Mode</button>
+        </div>
+    </nav>
+
+    <header class="bannerImg">
+        <h1 class="heroTest">Creativity</h1>
+    </header>
+
+    <main>
+        <h1>Our Blogs</h1>
+        <br>
+        <div class="blogs">
+            <div class="blog blogItem">
+                <img src="https://www.androidauthority.com/wp-content/uploads/2015/07/machine-learning-ai-artificial-intelligence-e1462471461626.jpg" alt="">
+                <br> <br>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Consectetur adipisicing elit. Dolorem? Officiis quos ut ab, est velit esse accusantium officia tempore deserunt saepe voluptas sint aliquam laboriosam iure nostrum labore magnam sapiente voluptatum praesentium minus sequi quidem sunt.</p> <p>Non in a facilis reprehenderit repellendus, commodi magni dicta quae enim! Magni voluptatem odit voluptatibus repellendus voluptate, cupiditate suscipit, obcaecati inventore modi repudiandae, ducimus nemo officiis dignissimos assumenda provident distinctio vel quisquam earum ratione porro qui alias? Voluptatem explicabo enim soluta dolores?</p>
+                <br>
+                <a class="btn" href="#">Read More</a>
+            </div>
+            <div class="sideBar blogItem">
+                <h2>Popular News</h2>
+                <div class="blogsMobile">
+                    <div class="singleBlog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6BBsjTKQ20CLBHI580RDOHrQRl_61CGxOdaRWno0Rp4SvKI5UrIm9DgLz4JjzGKXgFr0&usqp=CAU" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Dolor sit amet adipisicing elit. Harum minus vero tempore nostrum nisi omnis alias minima ipsa ad est.</p>
+                        <a class="btn" href="#">Read More</a>
+                    </div>
+                    <div class="singleBlog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZemTmM4cCZycawO85zyQfTheSJsBghQp0HQ&usqp=CAU" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Adipisicing elit harum minus vero tempore nostrum nisi omnis alias minima ipsa ad est obcaecati inventore.</p>
+                        <a class="btn" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="emojiSection">
+        <h1>Your Rating</h1>
+    <div class="emojisContainer">
+        <div class="feedbackContainer">
+            <div class="emojiContainer">
+                <i class="far fa-solid fa-face-angry fa-3x"></i>
+                <i class="far fa-solid fa-face-frown fa-3x"></i>
+                <i class="far fa-solid fa-face-meh fa-3x"></i>
+                <i class="far fa-solid fa-face-smile fa-3x"></i>
+                <i class="far fa-solid fa-face-laugh fa-3x"></i>
+            </div>
+            <div class="ratingContainer">
+                <i class="fa-solid fa-star fa-2x active"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

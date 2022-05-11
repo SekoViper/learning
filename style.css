@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+a{
+    text-decoration: none;
+    color: #0b467b;
+}
+
+.heroTest{
+    font-size: 5rem;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 6px 9px #004;
+    padding: 20px 0;
+    transition: 0.3s;
+}
+
+.active{
+    color: #ff0000;
+}
+
+.menu-items ul{
+    display: inline-flex;
+}
+
+.menu-items ul li{
+    list-style-type: none;
+    padding: 0 20px;
+    font-size: 17px;
+}
+
+.main-nav .logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f96f83;
+}
+
+.main-nav .menu-items ul li a:hover{
+    border-bottom: 1px solid #004;
+}
+
+.main-nav .toggler{
+    margin: 20px;
+    display: none;
+}
+
+.main-nav .toggler>div{
+    height: 3px;
+    width: 30px;
+    background-color: #004;
+    margin: 5px;
+}
+
+.bannerImg{
+    background-image: url(img/top-software-companies.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 64px)
+}
+p{
+    line-height: 1.5rem;
+   margin: 1rem 0 1.5rem 0;
+}
+
+.btn{
+    background-color: #f96f83;
+    padding: 0.7rem 1.5rem;
+    color: #fff;
+}
+
+main{
+    padding: 5rem 3rem;
+}
+
+.blogs{
+    display: flex;
+    gap: 3rem;
+}
+
+.blog>img{
+    width: 100%;
+}
+
+.singleBlog>img{
+    width: 100%;
+}
+
+.singleBlog{
+    margin: 3rem 0;
+}
+
+.sideBar{
+    width: 100vw;
+}
+
+.blogItem{
+    flex: 0 auto;
+}
+
+.modeBtn{
+    padding: 0.5rem 1.5rem;
+}
+
+.darkMode{
+    background-color: #0b467b!important;
+    color: rgb(220, 220, 220);
+}
+
+/* emojis project */
+
+.emojisContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emojiSection{
+    padding-top: 4rem;
+    width: 100vw;
+    height: 50vh;
+    background-color: #0b467b;
+    padding: 2rem;
+}
+
+.emojiSection>h1{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.feedbackContainer{
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    position: relative;
+}
+
+.emojiContainer{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%);
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+.ratingContainer{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20%;
+}
+
+.far{
+    margin: 1px;
+    transform: translate(0);
+    transition: transform 0.2s;
+}
+
+.fa-star{
+    color: grey;
+    cursor: pointer;
+}
+
+.fa-star.active{
+    color: gold;
+}
+
+
+@media only screen and (max-width: 750px){
+    .main-nav .toggler{
+        display: initial!important;
+        float: right;
+    }
+    main{
+        padding: 5rem 2rem;
+    }
+    .main-nav{
+        display: block;
+        height: 70px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .menu-items{
+        padding: 40px 0;
+    }
+
+    .menu-items ul{
+        display: block;
+    }
+    .menu-items ul li{
+        padding: 10px;
+    }
+
+    .nav-active{
+        height: 400px;
+        overflow: none;
+    }
+
+    .main-nav .logo{
+        padding: 0 20px;
+    }
+
+    .main-nav .toggler{
+        margin: 0 20px;
+    }
+
+    .modeBtn{
+        margin-left: 10px;
+    }
+
+    .blogs{
+        display: block;
+    }
+    .sideBar{
+        width: 85vw;
+        margin-top: 4rem;
+    }
+    .blogsMobile{
+        display: flex;
+        gap: 1.5rem;
+    }   
+    
+    .heroTest{
+        font-size: 3rem;
+        line-height: 150%;        
+        padding-top: 60%;
+        text-align: center;
+    }
+
+    .btn{
+        background-color: #f96f83;
+        padding: 0.7rem 0.5rem;
+        color: #fff;
+    }
+
+    /* emojis project */
+    .ratingContainer {
+        left: 45%;
+        transform: translate(-45%);
+        width: 70%;
+    }
+
+    .emojiContainer {
+        left: 45%;
+        transform: translate(-45%);
+    }
+}
