@@ -185,6 +185,49 @@ main{
 }
 
 
+/* profile rating Project */
+
+.statsBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    height: 50vh;
+    font-family: cursive;
+}
+
+.statsContainer{
+    margin: 20px;
+    border: dotted green;
+    min-width: 300px;
+    height: 120px;
+    position: relative;
+    padding: 20px;
+}
+
+.icon{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.counter{
+    font-size: 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: green;
+}
+
+.statsTitle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1px;
+    white-space: nowrap;
+}
+
 @media only screen and (max-width: 750px){
     .main-nav .toggler{
         display: initial!important;
@@ -263,5 +306,10 @@ main{
     .emojiContainer {
         left: 45%;
         transform: translate(-45%);
+    }
+
+    /* profile rating */
+    .statsBody{
+        flex-direction: column;
     }
 }
