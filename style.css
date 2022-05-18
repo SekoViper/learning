@@ -188,9 +188,13 @@ main{
 /* profile rating Project */
 .stats{
     background-color: gold;
-    height: 70vh;
+    height: 90vh;
     font-family: cursive;
     padding-top: 50px;
+}
+.stats>h2{
+    color: green;
+    padding: 0 0 20px 20px;
 }
 .statsBody{
     display: flex;
