@@ -186,14 +186,16 @@ main{
 
 
 /* profile rating Project */
-
+.stats{
+    background-color: gold;
+    height: 70vh;
+    font-family: cursive;
+    padding-top: 50px;
+}
 .statsBody{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gold;
-    height: 70vh;
-    font-family: cursive;
 }
 
 .statsContainer{
