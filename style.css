@@ -395,4 +395,10 @@ main{
     .statsBody{
         flex-direction: column;
     }
+
+    /* rotating image gallery */
+
+    .imageGalleryMain{
+        height: 70vh;
+    }
 }
