@@ -308,6 +308,79 @@ main{
     right: 20%;
 }
 
+/* new year countdown */
+
+.countdownContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.countdownContainer>h2{
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.year{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.countdown{
+    margin: 30px;
+    background-color: rgb(0, 0, 0, .1);
+    width: 100%;
+    color: #fff;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.countdown div{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: -25px;
+    text-align: center;
+    width: 100px;
+}
+
+.countdown #days::before{
+    content: "Days";
+    position: relative;
+}
+.countdown #hours::before{
+    content: "Hours";
+    position: relative;
+}
+.countdown #minutes::before{
+    content: "Minutes";
+    position: relative;
+}
+.countdown #seconds::before{
+    content: "Seconds";
+    position: relative;
+}
+
+.countdown>div::before{
+    content: "";
+    bottom: -30px;
+    left: 50px;
+    font-size: .35em;
+    line-height: 35px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    height: 35px;
+    letter-spacing: 1px;
+}
+
 
 
 
