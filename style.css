@@ -243,6 +243,7 @@ main{
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    padding-top: 90px;
 }
 
 .imageGalleryMain{
@@ -261,6 +262,7 @@ main{
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(0deg);
     position: relative;
+    transition: transform 0.5s ease;
 }
 
 .imageContainer>span{
