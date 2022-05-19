@@ -27,8 +27,6 @@ stars.forEach((star, index) => {
         updateRating(index)
     })
 })
-
-
 function updateRating(index){
     stars.forEach((star, newIndex) => {
         if(newIndex < index + 1){
@@ -45,7 +43,6 @@ function updateRating(index){
 }
 
 // profile rating 
-
 const counter = document.querySelectorAll('.counter')
 counter.forEach((count) =>{
     count.innerText = "0"
@@ -54,8 +51,7 @@ counter.forEach((count) =>{
         let currentNum = +count.innerText;
         const dataCeil = count.getAttribute('data-ceil');
         const increment = dataCeil / 15;
-        currentNum = Math.ceil(currentNum + increment)
-        
+        currentNum = Math.ceil(currentNum + increment);
         if(currentNum < dataCeil){
             count.innerText = currentNum;
             setTimeout(Increment, 50)
