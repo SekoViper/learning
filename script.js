@@ -89,3 +89,33 @@ function UpdateGallery(){
     }, 3000)
 }
 UpdateGallery()
+
+// new year countdown
+
+const dayEl = document.getElementById('days');
+const hourEl = document.getElementById("hours");
+const minuteEl = document.getElementById('minutes');
+const secondEl = document.getElementById('seconds');
+
+const newYearDate = new Date("Jan 1, 2023 00:00:00").getTime()
+updateCountdown()
+function updateCountdown(){
+    const now = new Date().getTime()
+    const gap = newYearDate - now;
+
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+
+    const daysToEndTheYear = Math.floor(gap/day);
+    const hoursToEndTheYear = Math.floor((gap % day)/hour);
+    const minutesToEndTheYear = Math.floor((gap % hour)/minute);
+    const secondsToEndTheYear = Math.floor((gap % minute)/second);
+
+    dayEl.innerText = daysToEndTheYear;
+    hourEl.innerText = hoursToEndTheYear;
+    minuteEl.innerText = minutesToEndTheYear;
+    secondEl.innerText = secondsToEndTheYear;
+    setTimeout(updateCountdown, 1000)
+}
