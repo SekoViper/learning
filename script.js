@@ -64,7 +64,6 @@ counter.forEach((count) =>{
 
 
 // rotating image project
-
 const imageContainerEl = document.querySelector('.imageContainer');
 const prevEl = document.getElementById('prev')
 const nextEl = document.getElementById('next')
@@ -77,7 +76,7 @@ prevEl.addEventListener("click", () => {
     UpdateGallery();
 })
 nextEl.addEventListener("click", () => {
-    x = x + 45;
+    x = x - 45;
     clearTimeout(timer);
     UpdateGallery();
 })
@@ -89,5 +88,4 @@ function UpdateGallery(){
         UpdateGallery()
     }, 3000)
 }
-
 UpdateGallery()
